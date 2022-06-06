@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* https://github.com/nuxt/framework/issues/1254 */
+html.h-full #__nuxt {
+    height: 100%;
+}

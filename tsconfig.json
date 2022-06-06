@@ -1,0 +1,34 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "resolveJsonModule": true,
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ES2017",
+    "lib": [
+      "DOM",
+      "es2020.promise"
+    ],
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "**/*.json"
+  ]
+}
