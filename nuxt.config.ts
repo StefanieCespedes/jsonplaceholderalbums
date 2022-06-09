@@ -1,5 +1,7 @@
 import { defineNuxtConfig } from 'nuxt';
 
+const { env } = process;
+
 export default defineNuxtConfig({
     build: {
         postcss: {
@@ -8,5 +10,13 @@ export default defineNuxtConfig({
         },
     },
 
-    css: ['~/tailwind.css']
+    css: ['~/tailwind.css'],
+
+    runtimeConfig: {
+        public: {
+            endpoints: {
+                albumsService: env.SERVICE_ENDPOINT_PLACEHOLDER || 'https://jsonplaceholder.typicode.com'
+            }
+        }
+    }
 });
