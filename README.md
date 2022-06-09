@@ -1,8 +1,18 @@
-# Nuxt 3 Minimal Starter
+# JSON Placeholder Albums App
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+### Overview
 
-## Setup
+The app consumes the [JSONPlaceholder Album API](https://jsonplaceholder.typicode.com/) and has the main goal of displaying albums, selected albums and their owners, information about the owner and information about each photo through a modal.
+
+It is currently [deployed on Netlify](https://jsonplaceholderalbums.netlify.app/).
+
+### Stack
+
+* [Nuxt 3](https://v3.nuxtjs.org/)
+* Tailwind - [why?](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
+* TypeScript
+
+## Nuxt Setup
 
 Make sure to install the dependencies:
 
