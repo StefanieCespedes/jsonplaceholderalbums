@@ -50,7 +50,6 @@ export default defineNuxtRouteMiddleware(async (to, _from) => {
             try {
                 if (!$photo.value || $photo.value.id !== Number(photoId)) {
                     $photo.value = await getPhoto(Number(photoId));
-                    console.log($photo.value);
                 }
             } catch (reason) {
                 return console.error(reason);
