@@ -32,7 +32,7 @@ const closeModal = (id: number) => {
     <div
         class="fixed top-0 bottom-0 left-0 right-0 flex justify-center bg-black bg-opacity-50"
     >
-        <div class="h-[500px] md:h-[600px] w-[600px] mt-16 border-rounded bg-white p-6 m-6">
+        <div class="h-[540px] md:h-[600px] w-[600px] mt-16 border-rounded bg-white p-6 m-6">
             <h2 class="text-2xl mb-4">{{ photo.title }}</h2>
             <img class="h-[300px] md:h-[400px] w-full object-cover object-center mb-2" :src="photo.url" :alt="`photo from ${photo.title}`">
             <p class="text-primary">Owner: {{ $albumAndUser.userData.name }}</p>
