@@ -27,8 +27,9 @@ const redirectToModal = (photoid: number) => {
 
 <template>
     <section class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 text-primary md:p-10">
-        <div v-for="photo in photos">
+        <div v-for="(photo, i) in photos">
             <div
+                :key="i"
                 class="container lg:px-10 lg:py-8 px-4 py-4 mx-auto"
                 @click="redirectToModal(photo.id)"
             >

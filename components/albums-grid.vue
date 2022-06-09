@@ -37,11 +37,12 @@ const redirectToAlbumPage = (id: number) => {
     <section class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 text-primary md:p-10">
         <div v-for="(album, index) in albums">
             <div
+                :key="index"
                 class="container lg:px-10 lg:py-8 px-4 py-4 mx-auto"
                 @click="redirectToAlbumPage(album.id)"
             >
                 <div class="h-full border-2 border-secondary border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="h-[150px] h-[150px] w-full object-cover object-center" :src="getCoverPicture(album.userId)" :alt="`album image for album ${index + 1}`">
+                    <img class="h-[150px] w-full object-cover object-center" :src="getCoverPicture(album.userId)" :alt="`album image for album ${index + 1}`">
                     <div class="p-4">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">ALBUM</h2>
                         <h1 class="text-lg font-medium text-gray-900 mb-3">{{ album.title }}</h1>

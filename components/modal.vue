@@ -39,12 +39,12 @@ const closeModal = (id: number) => {
             <p class="text-primary">Album: {{ $albumAndUser.albumData.title }}</p>
         </div>
         <div
-            class="mt-8"
+            class="mt-8 mr-4"
             @click="closeModal($albumAndUser.albumData.id)"
         >
             <svg
                 class="cursor-pointer"
-                xmlns="http://www.w3.org/2000/svg" width="40" height="40" x="0px" y="0px" viewBox="0 0 26 26" xml:space="preserve">
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" x="0px" y="0px" viewBox="0 0 26 26" xml:space="preserve">
                 <g>
                     <path style="fill:#7fffd4;" d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25
                     C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0
@@ -56,7 +56,7 @@ const closeModal = (id: number) => {
             </svg>
             <button
                 type="button"
-                class="text-primary"
+                class="text-primary text-left"
                 title="close"
             >
                 Close
